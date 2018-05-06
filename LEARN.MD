@@ -39,3 +39,6 @@
 https://github.com/ 导航栏
 https://github.com/login 表单
 选项卡，对话框，折叠
+
+http://www.h-ui.net/Hui-4.5-tab.shtml
+http://www.bootcss.com/p/flat-ui/
