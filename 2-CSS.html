@@ -8,8 +8,13 @@
       margin: 0;
     }
 
-    span {
+    a {
+      color: blue;
+      text-decoration: none;
+    }
 
+    a:hover {
+      text-decoration: underline;
     }
 
     .fontSize18px {
@@ -20,19 +25,64 @@
       font-weight: bolder;
     }
 
-    #container {
-      margin: 10px;
-      padding: 10px;
-    }
-
     </style>
+    <link rel="stylesheet" type="text/css" href="./2-CSS.css">
   </head>
   <body>
 
-    <div id="container" style="background-color:cyan">
+    <!--
+    引入样式的三种方式：
+      内联（行内）样式，
+      内部样式表，
+      外部样式表
+    引入样式的优先级：
+
+    样式定义：
+      #id {
+
+      } 定义唯一标识为id的样式，在id前加#修饰，通常只添加到页面的唯一元素标签上
+
+      .class {
+
+      } 定义类属性值为class的样式，在id前加.修饰，可用于在页面的不同元素标签上
+
+      aaa bbb {
+
+      } 表示bbb是aaa包裹的子元素
+
+      aaa, bbb {
+
+      } 表示aaa与bbb均采用如下样式
+
+    盒子模型：
+
+    （自适应）布局：
+
+     -->
+     <h1 id="tip">常用网站</h1>
+
+    <div id="container" style="background-color:#eee">
       <span class="fontSize18px fontWeightBolder">链接：</span>
-      <a class="fontSize18px" href="http://www.baidu.com/">百度一下，你就知道</a>
+      <a id="tip" name="tip" class="fontSize18px" href="http://www.baidu.com/"
+      target="_top">百度一下，你就知道</a>
     </div>
+
+    <!--
+    a
+    target:定义被链接的文档在何处显示
+      _blank在新标签页打开，默认在当前页打开
+      （html中的a标签的target属性的四个值的区别
+        https://www.cnblogs.com/caojiayan/p/6149374.html）
+    href:锚点
+      跳转地址：#xxx，同一页面的另一元素id为xxx
+
+     -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#tip">go to tip</a><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   </body>
 </html>
