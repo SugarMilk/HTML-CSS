@@ -5,9 +5,87 @@
     <title></title>
   </head>
   <body>
+    <form class="" action="./index.html" method="get">
+    <!-- get,post大小写均可 -->
+    <!-- <form action="action_page.php" method="GET" target="_blank" accept-charset="UTF-8"
+ectype="application/x-www-form-urlencoded" autocomplete="off" novalidate> -->
 
-    
+    <input type="text"
+      name="username"
+      value=""
+      placeholder="请输入帐号"
+      required
+      ><br> <!-- 文本输入框 -->
 
+    <input type="password"
+      name="password"
+      value=""
+      autofocus
+      placeholder="请输入密码"
+      ><br> <!-- 密码输入框 -->
+
+    <input type="radio"
+      name="sex"
+      value="male"
+      id="male"
+      checked
+    ><label for="male">男性</label><!-- 单选按钮 -->
+    <input type="radio"
+      name="sex"
+      value="female"
+      id="female"
+    ><label for="female">女性</label><br> <!-- 单选按钮 -->
+
+    <input type="checkbox"
+      name="language"
+      value="chinese"
+    >中文 <!-- 复选按钮 -->
+    <input type="checkbox"
+      name="language"
+      value="english"
+    >英语 <!-- 复选按钮 -->
+    <input type="checkbox"
+      name="language"
+      value="french"
+    >法语<br> <!-- 复选按钮 -->
+
+    <input type="submit"
+    name=""
+    value="完成"
+    ><br> <!-- 提交按钮 -->
+
+    <!-- <button type="submit">提交</button> -->
+
+    </form>
+
+    <br>
+    <br>
+
+    <p>下拉列表</p>
+    <select name="country">
+    <option value="cn">CN</option>
+    <option value="us" selected>US</option> <!-- selected默认值 -->
+    <option value="uk">UK</option>
+    <option value="jp">JP</option>
+    </select>
+
+    <br>
+    <br>
+
+    <textarea name="description" rows="8" cols="80">The cat was playing in the garden.</textarea>
+
+    <br>
+    <br>
+
+    <!-- HTML5新增类型 ...-->
+    <input type="color" name="" value="">
+    <input type="date" name="" value="">
+
+    <!--
+    disabled不可用
+    maxlength字符最长字数
+
+    -->
 
   </body>
 </html>
