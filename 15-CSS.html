@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen" type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      background: cyan;
+    }
+    .container {
+      background: #eee;
+    }
+    .container div {
+      width:100px;
+      height:100px;
+      font-weight: bolder;
+    }
+    div.box0 {
+      background: orange;
+      width: 50px;
+      height: 100px;
+    }
+    .box1 {
+      position: relative;
+      left: 100px;
+      top: 100px;
+      background:red;
+    }
+    .box2 {
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      background:pink;
+    }
+    </style>
+  </head>
+  <body>
+
+    <h1>定位</h1>
+
+    <div class="container">
+      <div class="box0">默认定位，符合文档流</div>
+      <div class="box1">相对定位，元素仍然占据原来的空间</div>
+      <!-- 1 -->
+      <div class="box2">绝对定位，相对于本文档原点，脱离原来的文档流</div>
+
+      <!--
+      相对定位是“相对于”元素在文档中的初始位置，
+      而绝对定位是“相对于”最近的已定位祖先元素，如果不存在已定位的祖先元素，那么“相对于”最初的包含块。
+      -->
+
+    </div>
+
+  </body>
+</html>
