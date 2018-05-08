@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen" type="text/css">
+      /* 注意伪类定义顺序 */
+      a:link {  /* 未访问的链接 */
+        color: red;
+      }
+      a:visited { /* 已访问的链接 */
+        color: green;
+      }
+      a:hover { /* 鼠标移动到链接上 */
+        color: orange;
+      }
+      a:active { /* 选定的链接 */
+        color: yellow;
+      }
+      input {
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        text-indent: 5px;
+      }
+      input:focus {
+        background-color: yellow;
+      }
+      li:first-child { /* li的第一个节点元素 */
+        font-weight: bolder;
+      }
+      li:last-child {
+        text-decoration: underline;
+      }
+      q:lang(no) {
+        quotes: "~""~"
+      }
+
+      /*
+      :first-letter	向文本的第一个字母添加特殊样式
+      :first-line	向文本的首行添加特殊样式
+      :before	在元素之前添加内容
+      :after	在元素之后添加内容
+       */
+    </style>
+  </head>
+  <body>
+
+    <h2>伪类</h2>
+    <div class="container">
+      <p>访问链接：
+        <a href="https://www.baidu.com/">百度一下，你就知道</a>
+      </p>
+    </div>
+
+    <input type="text" name="" value="" placeholder="请输入帐号">
+
+    <br>
+
+    <ul>
+      <li>China</li>
+      <li>Japan</li>
+      <li>Korea</li>
+    </ul>
+
+    <p>欢迎 <q lang="no">大家</q> 光临</p>
+
+  </body>
+</html>
