@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen" type="text/css">
+    [title] {
+      color: red;
+    } /* 属性选择器，包含title属性的元素使用该样式 */
+    [title=articleTitle] {
+      font-size: 30px;
+    } /* 属性选择器，包含title属性且属性值为articleTitle的元素使用该样式 */
+    input[type="submit"] {
+      appearance:button;
+      -moz-appearance:button; /* Firefox */
+      -webkit-appearance:button; /* Safari 和 Chrome */
+      box-sizing:border-box;
+      -moz-box-sizing:border-box; /* Firefox */
+      -webkit-box-sizing:border-box; /* Safari */;
+      padding: 0;
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+    }
+    button[type=submit] {
+      width: 100px;
+      height: 40px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 title="articleTitle">article title</h1>
+      <p title="this is the first line">first line</p>
+      <p>second line</p>
+      <!-- <input type="submit" name="" value="提交"> -->
+      <button type="submit" name="button">提交</button>
+    </div>
+
+  </body>
+</html>
